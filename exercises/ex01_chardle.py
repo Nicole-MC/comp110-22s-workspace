@@ -37,7 +37,10 @@ if str(user_word)[4] == character:
 if counter >= 1: 
     if counter == 1: 
         print("1 instance of " + character + " found in " + user_word)
+        print(" ")
     else: 
-        print(str(counter) + " instances of " + character + " found in " + user_word) 
+        print(str(counter) + " instances of " + character + " found in " + user_word)
+        print(" ") 
 else: 
     print("No instances of " + character + " found in " + user_word)  
+    print(" ")
