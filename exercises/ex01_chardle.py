@@ -12,7 +12,7 @@ character: str = input("Enter a single character: ")
 counter: int = 0
 
 if int(len(character)) != 1:
-    print("Character must be a single character. ")
+    print("Error: Character must be a single character. ")
     exit()
 
 if int(len(character)) == 1:
