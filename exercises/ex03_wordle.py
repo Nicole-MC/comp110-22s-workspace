@@ -27,7 +27,7 @@ def emojified(guess_word: str, secret_word: str) -> str:
     assert len(guess_word) == len(secret_word)
     index: int = 0 
     # like in the contains_char function, "index" will cycle through each index in the str of "guess_word" to match and mark characters in the "secret_word" str. 
-    emoji: str = " "
+    emoji: str = ""
     # emoji is an empty string so it can be redined later to either the green, white, or yellow boxes. 
     while index < len(guess_word):
         if guess_word[index] == secret_word[index]:
