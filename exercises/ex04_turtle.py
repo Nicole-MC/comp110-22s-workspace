@@ -13,7 +13,7 @@ def main() -> None:
     paint_brush.hideturtle
 
     # Calling Functions
-    background()
+    background(paint_brush)
     stars(paint_brush)
     moon(paint_brush, -200, 180, 50, 0)
     moon(paint_brush, -170, 180, 50, 1)
@@ -40,14 +40,14 @@ def main() -> None:
 
 
 # Background
-def background():
+def background(paintbrush: Turtle) -> None:
     """Running this function will make the background of the screen blue."""
     colormode(255)
     bgcolor(15, 21, 61) 
 
 
 # This is just a white rectangle that I used for better coverage for the clouds. 
-def foreground(paint_brush: Turtle):
+def foreground(paint_brush: Turtle) -> None:
     """Running this function will create a white rectangle across the entire screen."""
     paint_brush.penup
     paint_brush.goto(-800, -300)
@@ -133,7 +133,7 @@ def moon(paint_brush: Turtle, x: float, y: float, radius: float, color: float) -
     
 
 # * stars *
-def stars(paint_brush: Turtle):
+def stars(paint_brush: Turtle) -> None:
     """Run function to randomly scatter 40 dots around the background of the scene."""
     colormode(255)
     paint_brush.color(15, 21, 61)
@@ -227,3 +227,5 @@ def other_ice(paint_brush: Turtle, x: float, y: float) -> None:
 
 if __name__ == "__main__":
     main()
+# https://static.wikia.nocookie.net/adventuretimewithfinnandjake/images/4/42/5096598513_3214217d0f.jpg/revision/latest/scale-to-width-down/185?cb=20110302004337
+# this is the image I used as a reference ^ I tried to simplify it with the clouds. I also couldnt figure out an easy way to draw and fill in the patterns on the mountains, so sorry for leaving that out. 
