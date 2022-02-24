@@ -27,6 +27,7 @@ def sub(sub_list: list[int], first: int, last: int) -> list[int]:
 def concat(evens_list: list[int], subs_list: list[int]) -> list[int]: 
     """A list that contains the only_evens elements and then the sub elem."""
     output: list[int] = []
+    
     i: int = 0
     while i < len(evens_list):
         output.append(evens_list[i])
