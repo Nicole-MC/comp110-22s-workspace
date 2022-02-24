@@ -10,7 +10,7 @@ def only_evens(numbers: list[int]) -> list[int]:
     while i < len(numbers): 
         if numbers[i] % 2 == 0:
             even.append(numbers[i])
-            i += 1
+        i += 1
     return even
 
 
@@ -20,11 +20,12 @@ def sub(sub_list: list[int], first: int, last: int) -> list[int]:
     i: int = first
     while i < last:
         new_list.append(sub_list[i])
+        i += 1
     return new_list
 
 
 def concat(evens_list: list[int], subs_list: list[int]) -> list[int]: 
-    """A list that contains the only_evens elements and then the sub elements."""
+    """A list that contains the only_evens elements and then the sub elem."""
     output: list[int] = []
     i: int = 0
     while i < len(evens_list):
