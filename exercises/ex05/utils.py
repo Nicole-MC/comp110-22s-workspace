@@ -32,5 +32,5 @@ def concat(evens_list: list[int], subs_list: list[int]) -> list[int]:
         i += 1
     while i < len(subs_list):
         output.append(subs_list[i])
-        i += 1
+        i += 1 
     return output
