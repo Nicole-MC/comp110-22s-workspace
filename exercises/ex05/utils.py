@@ -16,7 +16,7 @@ def only_evens(numbers: list[int]) -> list[int]:
 
 def sub(sub_list: list[int], first: int, last: int) -> list[int]:
     """later."""
-    new_list = list[int] = []
+    new_list: list[int] = []
     i: int = first
     while i < last:
         new_list.append(sub_list[i])
