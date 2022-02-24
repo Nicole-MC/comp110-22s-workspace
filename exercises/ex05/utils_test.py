@@ -16,7 +16,7 @@ from utils import concat
 def test_only_evens() -> None:
     """Test an empty list for only_evens."""
     numbers: list[int] = []
-    assert only_evens(numbers) == 4
+    assert only_evens(numbers)
 
 
 def test_only_evens_use() -> None: 
@@ -27,8 +27,8 @@ def test_only_evens_use() -> None:
 
 def test_only_evens_use2() -> None:
     """Test a list of numbers that have negatives."""
-    numbers: list[int] = [-4, -9, 2, -12]
-    assert only_evens(numbers) == [] 
+    numbers: list[int] = [-4, -9, 2, 12]
+    assert only_evens(numbers)
 
 
 def test_sub() -> None:
