@@ -227,5 +227,15 @@ def other_ice(paint_brush: Turtle, x: float, y: float) -> None:
 
 if __name__ == "__main__":
     main()
+
+
+
+
+
+
+
+
+
+    
 # https://static.wikia.nocookie.net/adventuretimewithfinnandjake/images/4/42/5096598513_3214217d0f.jpg/revision/latest/scale-to-width-down/185?cb=20110302004337
 # this is the image I used as a reference ^ I tried to simplify it with the clouds. I also couldnt figure out an easy way to draw and fill in the patterns on the mountains, so sorry for leaving that out. 
