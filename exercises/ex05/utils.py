@@ -15,7 +15,7 @@ def only_evens(numbers: list[int]) -> list[int]:
 
 
 def sub(sub_list: list[int], first: int, last: int) -> list[int]:
-    """later."""
+    """Given an list of numbers, return its subset - 1 index."""
     new_list: list[int] = []
     i: int = first
     while i < last:
@@ -24,7 +24,7 @@ def sub(sub_list: list[int], first: int, last: int) -> list[int]:
 
 
 def concat(evens_list: list[int], subs_list: list[int]) -> list[int]: 
-    """."""
+    """A list that contains the only_evens elements and then the sub elements."""
     output: list[int] = []
     i: int = 0
     while i < len(evens_list):

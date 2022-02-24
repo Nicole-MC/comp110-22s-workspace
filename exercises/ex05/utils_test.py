@@ -1,7 +1,7 @@
 """Test Utils Functions.""" 
 
 
-from exercises.ex05.utils import only_evens
+from exercises.ex05.utils import only_evens 
 
 
 def test_only_evens_edge() -> None:
@@ -15,5 +15,5 @@ def test_only_evens_use() -> None:
 
 
 def test_only_evens_use2() -> None:
-    numbers: list[int] = [4, 9, 2, 10]
-    assert only_evens(numbers)
+    numbers: list[int] = [4, 9, 2, 12]
+    assert only_evens(numbers) 
