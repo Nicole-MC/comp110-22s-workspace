@@ -3,11 +3,6 @@
 __author__ = 730388398
 
 
-
-from exercises.ex05.utils import only_evens, sub, concat
-
-
-
 from utils import only_evens
 from utils import sub
 from utils import concat
