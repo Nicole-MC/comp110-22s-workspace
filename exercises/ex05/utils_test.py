@@ -45,8 +45,8 @@ def test_sub_use() -> None:
 def test_sub_use1() -> None:
     """Test list with a negative first index.""" 
     sub_list: list[int] = [-1, -3, -6, 8, 10]
-    first: int = -1
-    last: int = 7
+    first: int = 1
+    last: int = 5
     assert sub(sub_list, first, last) 
 
 
@@ -54,7 +54,7 @@ def test_sub_use2() -> None:
     """Test empty list for sub.""" 
     sub_list: list[int] = []
     first: int = 0
-    last: int = 7
+    last: int = 0
     assert sub(sub_list, first, last)
 
 
