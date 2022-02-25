@@ -58,6 +58,6 @@ while True:
     elif i == ("no"):
         print("  ")
         print("Okay, Goodbye!")
-        exit() 
+        z == False
     else: 
         print(" Please type YES or NO. ") 
