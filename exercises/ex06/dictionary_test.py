@@ -1,6 +1,5 @@
 """Dictionary Functions Testing."""
 
-
 __author__ = "730388398"
 
 
@@ -21,14 +20,11 @@ def test_invert_use() -> None:
     assert(given_invert)
 
 
-
-
-
-
 def test_favorite_colors() -> None:
     """Test."""
     colors: dict = {"george": "blue", "louis": "blue", "alex": "red", "karl": "purple", "clay": "green", "nick": "red", "nicole": "blue"}
     assert(colors)
+
 
 def test_favorite_colors_use() -> None:
     """Test."""
@@ -37,5 +33,5 @@ def test_favorite_colors_use() -> None:
 
 
 with pytest.raises(KeyError):
-    colors: dict[str, str] = {"nicole": "black", "nicole": "blue", "sarah": "pink", "dream": "black"}
+    colors: dict[str, str] = {"nicole": "black", "george": "blue", "sarah": "pink", "dream": "black", "louis": "blue"}
     favorite_color(colors)
