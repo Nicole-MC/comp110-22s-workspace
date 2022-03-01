@@ -24,5 +24,5 @@ def favorite_color(colors: dict[str, str]) -> str:
     return max(color_counter_dict)
 
 
-# def count(values: list[str]) -> dict[str, int]: 
-#     """Input a list of words to see how many times each one is inputed."""
+def count(values: list[str]) -> dict[str, int]: 
+    """Input a list of words to see how many times each one is inputed."""
