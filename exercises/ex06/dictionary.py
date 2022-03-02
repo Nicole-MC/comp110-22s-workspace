@@ -17,7 +17,7 @@ def favorite_color(colors: dict[str, str]) -> str:
     """Input the users' names and their favorite colors to see the most common favorite color."""
     color_counter_dict = {}
     for key, value in colors.items():
-        if value not in color_counter_dict:
+        if key not in color_counter_dict:
             color_counter_dict[value] = 0
         else:
             color_counter_dict[value] += 1
@@ -32,7 +32,7 @@ def count(values: list[str]) -> dict[str, int]:
         counter_dict[i] = values[i]
         i += 1
     for key, value in counter_dict.items():
-        if value not in counter_dict:
+        if key not in counter_dict:
             counter_dict[value] = 0
         else: 
             counter_dict[value] += 1

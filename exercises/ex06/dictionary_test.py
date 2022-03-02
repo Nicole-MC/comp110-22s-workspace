@@ -41,4 +41,4 @@ with pytest.raises(KeyError):
 def test_counter() -> None:
     """Test."""
     values: list = ["berries", "berries", "veggies", "protein", "water", "berries", "water"]
-
+    assert(values)
