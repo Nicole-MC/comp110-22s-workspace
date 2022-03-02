@@ -33,6 +33,12 @@ def test_favorite_colors_use() -> None:
     assert(colors)
 
 
+def test_favorite_colors_tie() -> None:
+    """Test colors for a tie."""
+    colors: dict = {"emma": "green", "nicole": "green", "sarah": "pink", "george": "blue", "clay": "blue"}
+    assert(colors)
+
+
 with pytest.raises(KeyError):
     colors: dict[str, str] = {"nicole": "black", "george": "blue", "sarah": "pink", "dream": "black", "louis": "blue"}
     favorite_color(colors)

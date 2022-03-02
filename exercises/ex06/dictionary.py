@@ -4,7 +4,7 @@
 __author__ = "730388398"
 
 
-def invert(given_invert: dict) -> dict[str, str]: 
+def invert(given_invert: dict[str, str]) -> dict[str, str]: 
     """Given the input of keys and their values, the output needs to swap them."""
     input_swap = {}
     for key, value in given_invert: 
