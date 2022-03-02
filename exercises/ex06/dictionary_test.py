@@ -5,6 +5,7 @@ __author__ = "730388398"
 
 from dictionary import favorite_color
 from dictionary import invert
+from dictionary import count
 import pytest
 
 
@@ -35,3 +36,9 @@ def test_favorite_colors_use() -> None:
 with pytest.raises(KeyError):
     colors: dict[str, str] = {"nicole": "black", "george": "blue", "sarah": "pink", "dream": "black", "louis": "blue"}
     favorite_color(colors)
+
+
+def test_counter() -> None:
+    """Test."""
+    values: list = ["berries", "berries", "veggies", "protein", "water", "berries", "water"]
+

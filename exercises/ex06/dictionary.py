@@ -26,3 +26,14 @@ def favorite_color(colors: dict[str, str]) -> str:
 
 def count(values: list[str]) -> dict[str, int]: 
     """Input a list of words to see how many times each one is inputed."""
+    counter_dict = {}
+    i = 0
+    for i in range(len(values)):
+        counter_dict[i] = values[i]
+        i += 1
+    for key, value in counter_dict.items():
+        if value not in counter_dict:
+            counter_dict[value] = 0
+        else: 
+            counter_dict[value] += 1
+    return counter_dict
