@@ -45,6 +45,17 @@ with pytest.raises(KeyError):
 
 
 def test_counter() -> None:
-    """Test."""
+    """Test for list."""
     values: list = ["berries", "berries", "veggies", "protein", "water", "berries", "water"]
+    assert(values)
+
+
+def test_counter_small() -> None:
+    """Test for small values."""
+    values: list = ["a", "b", "a", "c", "d"]
+    assert(values)
+
+def test_counter_large() -> None:
+    """Test for large values."""
+    values: list = ["z", "a", "y", "b", "x", "c", "q", "z", "z", "z", "z", "z", "a", "q", "q", "x"]
     assert(values)
