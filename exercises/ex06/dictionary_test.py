@@ -29,7 +29,7 @@ def test_favorite_colors() -> None:
 
 def test_favorite_colors_use() -> None:
     """Test."""
-    colors: dict = {"emma": "green", "nicole": "green", "sarah": "pink", "george": "blue"}
+    colors: dict[str, str] = {"emma": "green", "nicole": "green", "sarah": "pink", "george": "blue"}
     assert favorite_color(colors)
 
 
