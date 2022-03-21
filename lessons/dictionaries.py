@@ -3,7 +3,7 @@
 # Declaring a type of dictionary
 schools: dict[str, int]
 
-#Intialize to an empty dictionary 
+# Intialize to an empty dictionary 
 schools = dict()
 
 # Set a key-value pairing in the dictionarty
@@ -31,5 +31,4 @@ print(f"is_duke_present: {is_duke_present}")
 schools["UNC"] = 20000
 schools["NCSU"] = schools["NCSU"] + 200 
 
-
-print(schools)
+print(schools["UNCC"]) 
